@@ -1,0 +1,12 @@
+//Variables:
+@import 'partials/resets';
+@import 'partials/mixins';
+@import "../shared/utilities";
+@import 'partials/variables';
+@import 'partials/typography';
+@import 'partials/animations';
+
+//Base mobile stylesheet
+@import 'partials/mobile';
+//Medium desktop styles:
+@import 'partials/medium-desktop';

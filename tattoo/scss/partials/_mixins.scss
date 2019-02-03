@@ -1,0 +1,18 @@
+//Utility mixins to include in main style code:
+
+@mixin box-shade {
+  -webkit-box-shadow: 0px 5px 15px 0px rgba(28,24,24,0.8);
+  -moz-box-shadow: 0px 5px 15px 0px rgba(28,24,24,0.8);
+  box-shadow: 0px 5px 15px 0px rgba(28,24,24,0.8);
+}
+
+
+@mixin overlay {
+  position: fixed;
+  top:0;
+  left:0;
+  bottom:0;
+  right:0;
+  z-index: 100;
+  overflow:hidden;
+}

@@ -1,0 +1,343 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0; }
+
+a {
+  text-decoration: none;
+  color: inherit; }
+
+ul {
+  list-style: none;
+  list-style-type: none; }
+
+* {
+  font-family: 'Zilla Slab', serif; }
+
+body {
+  background-color: #1C1818; }
+
+.header {
+  width: 100%;
+  background-color: #1C1818;
+  color: #F0F0E2;
+  padding: 0.625em; }
+  .header__title {
+    font-size: 2.5em;
+    letter-spacing: 0.4375em;
+    margin-bottom: 0.3125em;
+    text-align: center; }
+  .header__logo {
+    text-align: center; }
+    .header__logo img {
+      width: 3.125em;
+      height: 3.125em;
+      object-fit: cover; }
+  .header__toggle {
+    font-size: 2.25em;
+    text-align: center; }
+    .header__toggle-button {
+      line-height: 1.75em;
+      margin: 0.9375em auto;
+      display: block;
+      width: 1.75em;
+      height: 1.75em;
+      border-radius: 50%;
+      border: 0.0625em solid #F0F0E2;
+      background-color: #194a3b;
+      color: #9edeca;
+      font-size: 0.875em; }
+  .header__social {
+    text-align: center; }
+    .header__social-icon {
+      font-size: 1.125em;
+      margin: 0.625em 0.875em;
+      padding: 0.3125em; }
+      .header__social-icon i {
+        color: #db5442; }
+
+.nav {
+  background-color: #1C1818;
+  width: 100%;
+  height: 0%;
+  position: fixed;
+  border-left: 0.3125em solid #9A2C1D;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 100;
+  transition: 0.7s;
+  overflow: hidden; }
+  .nav__toggle {
+    font-size: 2.25em;
+    text-align: center;
+    width: 90%;
+    margin: 0.625em auto; }
+    .nav__toggle-button {
+      line-height: 1.75em;
+      display: block;
+      width: 1.75em;
+      height: 1.75em;
+      border-radius: 50%;
+      border: 0.0625em solid #F0F0E2;
+      background-color: #9A2C1D;
+      color: #e78e82;
+      font-size: 0.875em; }
+  .nav__list {
+    width: 90%;
+    margin: 0 auto;
+    color: #9edeca;
+    font-size: 1.5em;
+    letter-spacing: 0.1875em; }
+    .nav__list-item {
+      margin-top: 0.5em;
+      text-transform: uppercase; }
+  .nav__social {
+    margin-top: 1.5em; }
+    .nav__social-icon {
+      font-size: 1.5em;
+      margin: 0.3125em 0.3125em;
+      padding: 0.3125em; }
+      .nav__social-icon i {
+        color: #db5442; }
+
+.lightbox {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 100;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  background-color: #1C1818;
+  display: none; }
+  .lightbox__content {
+    justify-content: center;
+    display: flex;
+    height: 90%;
+    flex-direction: column; }
+  .lightbox__img {
+    max-width: 95%;
+    display: none;
+    margin: 0 auto;
+    max-height: 90%; }
+    .lightbox__img:nth-child(1) {
+      display: block; }
+  .lightbox__controls {
+    display: flex;
+    height: 10%;
+    justify-content: center; }
+  .lightbox__button {
+    color: #9edeca;
+    margin: 0 1.5625em;
+    font-size: 1.75em; }
+
+.homepage-splash {
+  background: url("https://res.cloudinary.com/duua3lsu1/image/upload/v1529437948/theme-sandbox/tattoo/tattoo-eleven.jpg");
+  background-repeat: no-repeat;
+  background-position: right bottom;
+  background-size: cover;
+  position: relative;
+  width: 100%;
+  height: 60vh; }
+  .homepage-splash__overlay {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: #9a2c1d;
+    /* Old browsers */
+    background: -moz-linear-gradient(top, #9a2c1d 2%, #1c1818 100%, #7db9e8 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, #9a2c1d 2%, #1c1818 100%, #7db9e8 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, #9a2c1d 2%, #1c1818 100%, #7db9e8 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#9a2c1d', endColorstr='#7db9e8',GradientType=0 );
+    /* IE6-9 */
+    opacity: 0.45; }
+
+.title-bar {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+  height: 20vh;
+  position: relative; }
+  .title-bar__heading {
+    color: #9edeca;
+    font-size: 1.5em;
+    letter-spacing: 0.4375em;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    text-transform: uppercase;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    text-align: left;
+    padding: 1.5625em;
+    background-color: #339678; }
+
+.latest-work {
+  width: 100%;
+  display: grid;
+  grid-gap: 0.125em;
+  grid-template-columns: 1fr 1fr;
+  grid-auto-rows: 25vh;
+  overflow-x: scroll; }
+  .latest-work__box {
+    overflow: hidden; }
+    .latest-work__box img {
+      height: 100%;
+      width: auto; }
+    .latest-work__box:nth-child(2), .latest-work__box:nth-child(4) {
+      grid-row: span 2; }
+
+.artists {
+  background-color: #e8e4e4;
+  color: #1C1818;
+  padding: 0.625em; }
+  .artists__img {
+    width: 9.375em;
+    height: 9.375em;
+    order: 0;
+    object-fit: cover;
+    border-radius: 50%; }
+  .artists__profile {
+    padding: 0.625em 1.25em;
+    display: flex;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 1.5625em; }
+    .artists__profile:nth-child(even) img {
+      order: 20; }
+  .artists__text {
+    padding: 0 0.9375em;
+    display: flex;
+    order: 10;
+    flex-direction: column;
+    justify-content: center; }
+  .artists__name {
+    font-size: 1.125em;
+    margin: 0 auto;
+    font-weight: bold; }
+  .artists__style-pill {
+    color: #1C1818;
+    border-bottom: solid 0.0625em #e78e82;
+    text-align: left;
+    display: block;
+    font-size: 1.125em; }
+    .artists__style-pill:last-child {
+      border-bottom: 0; }
+
+.find-us__map {
+  background: url("https://res.cloudinary.com/duua3lsu1/image/upload/v1529437947/theme-sandbox/tattoo/map.jpg");
+  height: 18.75em; }
+
+.find-us__details {
+  background-color: #9A2C1D;
+  color: #F0F0E2;
+  padding: 0.9375em;
+  font-size: 1.125em; }
+  .find-us__details p {
+    width: 45%; }
+
+.footer {
+  background-color: #1C1818;
+  font-size: 0.875em;
+  color: #F0F0E2;
+  padding: 0.625em; }
+  .footer__menu-item {
+    padding: 0.3125em; }
+  .footer__menu-link {
+    color: #e78e82; }
+  .footer__copyright {
+    padding: 0.3125em; }
+
+@media only screen and (min-width: 1024px) {
+  .nav {
+    display: flex;
+    width: 100%;
+    height: auto;
+    border: 0;
+    padding: 0.625em;
+    position: relative; }
+    .nav__toggle {
+      display: none; }
+    .nav__list {
+      width: 80%;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center; }
+      .nav__list-item {
+        width: auto;
+        margin: 0 0.3125em;
+        letter-spacing: 0.125em;
+        font-size: 16px; }
+    .nav__social {
+      width: 20%;
+      margin: 0;
+      display: flex;
+      justify-content: flex-end;
+      align-items: center; }
+      .nav__social-icon {
+        margin: 0 0.3125em;
+        padding: 0;
+        font-size: 1.125em; }
+  .homepage-splash {
+    height: 80vh; }
+  .header {
+    display: flex;
+    justify-content: flex-start;
+    padding-top: 0.9375em; }
+    .header__toggle {
+      display: none; }
+    .header__social {
+      display: none; }
+    .header__title {
+      font-size: 1.125em;
+      margin: 0 0.9375em; }
+    .header__logo img {
+      height: 1.125em; }
+  .artists {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 2.5em 0; }
+    .artists__profile {
+      width: 20%;
+      display: block; }
+    .artists__text {
+      order: 0; }
+    .artists__img {
+      order: 1; }
+  .title-bar {
+    height: 10vh; }
+    .title-bar__heading {
+      padding: 0.625em;
+      font-weight: normal; }
+  .latest-work {
+    max-width: 60%;
+    padding: 0.9375em;
+    grid-auto-rows: 30vh;
+    overflow: hidden;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: 0 auto; }
+    .latest-work__box {
+      display: flex; }
+      .latest-work__box:nth-child(3) {
+        grid-row: 1/3; }
+  .find-us {
+    display: flex; }
+    .find-us__map {
+      width: 50%; }
+    .find-us__details {
+      width: 50%; } }

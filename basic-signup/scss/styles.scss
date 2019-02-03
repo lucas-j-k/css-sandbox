@@ -1,0 +1,38 @@
+//Variables we are overwriting:
+$primary: #617f13;
+$dark: #040404;
+
+$text-muted: #91918f;
+
+//Variables we are defining from scratch:
+$overlaybg: rgba(0,0,0,0.9);
+
+
+// Import bootstrap. Any variables redefined above will not be overwritten:
+@import "node_modules/bootstrap/scss/bootstrap";
+
+
+//Custom styling:
+
+* {
+  font-family: 'Muli', sans-serif;
+}
+
+body {
+  background: url('http://res.cloudinary.com/duua3lsu1/image/upload/v1521385762/theme-sandbox/chairscompressed.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+}
+
+
+.form-panel {
+  background-color: $overlaybg;
+}
+
+.box-shadow {
+  -webkit-box-shadow: 0px 4px 12px 3px rgba(0,0,0,0.73);
+  -moz-box-shadow: 0px 4px 12px 3px rgba(0,0,0,0.73);
+  box-shadow: 0px 4px 12px 3px rgba(0,0,0,0.73);
+}

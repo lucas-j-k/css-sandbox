@@ -1,0 +1,17 @@
+//Variables for art gallery theme
+
+$primary: #DC731B;
+$secondary: #E1B796;
+$tertiary: #A9A39A;
+$black: #1C1818;
+$white: #EAEAE9;
+
+
+$primary-dark: darken($primary, 10%);
+$primary-light: lighten($primary, 10%);
+
+$secondary-dark: darken($secondary, 10%);
+$secondary-light: lighten($secondary, 10%);
+
+$tertiary-dark: darken($tertiary, 10%);
+$tertiary-light: lighten($tertiary, 10%);

@@ -1,0 +1,240 @@
+// Main Sass File
+// @import "node_modules/bootstrap/scss/bootstrap";
+//Bootstrap Overrides:
+
+$font-family-sans-serif: 'Ramabhadra', sans-serif;
+
+$theme-colors: (
+  "primary": #567c38,
+  "danger": #ff4136
+);
+
+
+@import "node_modules/bootstrap/scss/bootstrap";
+
+
+//Custom styling on top of Bootstrap:
+
+//My Variables:
+$overlay--red: rgba(214, 59, 8, 0.5);
+$overlay--black: rgba(21, 22, 21, 0.7);
+$overlay--black--dark: rgba(21, 22, 21, 0.95);
+$overlay--red--pale: rgba(214, 59, 8, 0.2);
+$overlay--black--pale: rgba(21, 22, 21, 0.4);
+$white--pale: rgba(245, 245, 245, 0.7);
+$full-black: #070707;
+$red--light: #e08c79;
+$red--lighter: #fcb5a1;
+
+
+#homepage__column--one {
+  background-image: url('https://res.cloudinary.com/duua3lsu1/image/upload/v1522008757/theme-sandbox/formal-min.jpg');
+}
+
+#homepage__column--two {
+  background-image: url('https://res.cloudinary.com/duua3lsu1/image/upload/v1522008755/theme-sandbox/casual-min.jpg');
+}
+
+#homepage__column--three {
+  background-image: url('https://res.cloudinary.com/duua3lsu1/image/upload/v1522008756/theme-sandbox/shoes-min.jpg');
+}
+
+#homepage__column--four {
+  background-image: url('https://res.cloudinary.com/duua3lsu1/image/upload/v1522008756/theme-sandbox/watch-min.jpg');
+}
+
+.border-radius {
+  border-radius: 10px 10px 10px 10px;
+  -moz-border-radius: 10px 10px 10px 10px;
+  -webkit-border-radius: 10px 10px 10px 10px;
+  border: 0px solid #000000;
+}
+
+.box-shadow {
+  -webkit-box-shadow: 1px 6px 14px -2px rgba(0,0,0,0.4);
+  -moz-box-shadow: 1px 6px 14px -2px rgba(0,0,0,0.4);
+  box-shadow: 1px 6px 14px -2px rgba(0,0,0,0.4);
+}
+
+.color-overlay {
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  z-index: 1;
+  padding-bottom: 100px;
+
+  &--red {
+    background-color: $overlay--red;
+  }
+  &--black {
+    background-color: $overlay--black;
+  }
+}
+
+
+
+.brand-box {
+  // position: absolute;
+  // top:0;
+  // left:50%;
+  // z-index: 10;
+  width:100%;
+
+
+  .contents {
+    background-color: $overlay--black--dark;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+  }
+  .logo {
+    color:$white;
+  }
+  .title {
+    color:$white;
+  }
+  .menu-trigger {
+    color:$white;
+    font-size: 1.5em;
+  }
+  i {
+    color:$white;
+    padding:0 0.25em;
+  }
+}
+
+
+@include media-breakpoint-up(sm) {
+  .brand-box {
+    width:auto;
+    position: absolute;
+    top:0;
+    left:50%;
+    z-index: 10;
+
+    .contents {
+      border-radius: 0px 0px 10px 10px;
+      -moz-border-radius: 0px 0px 10px 10px;
+      -webkit-border-radius: 0px 0px 10px 10px;
+      position: relative;
+      left:-50%;
+    }
+  }
+
+
+}
+
+
+//MENU OVERLAY STYLING
+
+.menu-overlay {
+  width:100%;
+  height:0;
+  position: fixed;
+  z-index: 1500;
+  left:0;
+  top:0;
+  overflow-x: hidden;
+  transition: 0.25s;
+  background-color: $overlay--black--dark;
+
+  .menu-wrap {
+    position: relative;
+    top: 5%;
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
+  }
+
+
+  .menu-list {
+    margin-top: 20px;
+    margin-bottom: 25px;
+  }
+
+  .menu-link {
+    color:$white;
+    margin:5px auto;
+  }
+
+  .icon-wrap {
+    width:200px;
+    margin: 0 auto;
+  }
+
+  .menu-icon {
+    color:$white--pale;
+    padding:0 5px;
+    font-size: 1.6em;
+  }
+
+  #closeMenuButton {
+    color:$danger;
+    font-size: 1.6em;
+    margin-bottom: 2em;
+  }
+
+}
+
+.column-panel {
+
+  // border-top: 1px solid $overlay--white;
+  width:80%;
+
+  &__title {
+    color:$white;
+    font-size: 1.75em;
+  }
+
+  &__link {
+    color:$red--light;
+  }
+
+  &--red {
+    background-color:$overlay--red;
+    .column-panel__link {
+      color:$red--lighter;
+    }
+  }
+
+  &--black {
+    background-color:$overlay--black;
+    .column-panel__link {
+      color:$red--light;
+    }
+  }
+
+}
+
+#footer {
+  background-color: $full-black;
+
+  p {
+    font-size:1em;
+  }
+}
+
+
+
+//Media queries to set height of homepage columns
+
+.homepage__column {
+  min-height: 300px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+@include media-breakpoint-up(sm) {
+  .homepage__column {
+    min-height: 300px;
+  }
+}
+
+@include media-breakpoint-up(md) {
+  .homepage__column {
+    min-height: 650px;
+  }
+}

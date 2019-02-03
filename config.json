@@ -1,0 +1,34 @@
+{
+    "projects" : [
+        {
+            "title" : "Dive School",
+            "directory" : "dive-school",
+            "thumbnail" : "https://res.cloudinary.com/duua3lsu1/image/upload/v1530219569/theme-sandbox/Thumbnails-for-homepage/dive-thumb.jpg"
+        },
+        {
+            "title" : "Basic Signup",
+            "directory" : "basic-signup",
+            "thumbnail" : "https://res.cloudinary.com/duua3lsu1/image/upload/v1530219569/theme-sandbox/Thumbnails-for-homepage/landing-page.jpg"
+        },
+        {
+            "title" : "Menswear",
+            "directory" : "menswear",
+            "thumbnail" : "https://res.cloudinary.com/duua3lsu1/image/upload/v1530219569/theme-sandbox/Thumbnails-for-homepage/menswear-thumb.jpg"
+        },
+        {
+            "title" : "Art Gallery",
+            "directory" : "art-gallery",
+            "thumbnail" : "https://res.cloudinary.com/duua3lsu1/image/upload/v1530219570/theme-sandbox/Thumbnails-for-homepage/gallery-thumb.jpg"
+        },
+        {
+            "title" : "Tattoo Studio",
+            "directory" : "tattoo",
+            "thumbnail" : "https://res.cloudinary.com/duua3lsu1/image/upload/v1530219569/theme-sandbox/Thumbnails-for-homepage/tatt-thumb.jpg"
+        },
+        {
+            "title" : "Agency Homepage",
+            "directory" : "agency-homepage",
+            "thumbnail" : "https://res.cloudinary.com/duua3lsu1/image/upload/v1543680045/theme-sandbox/Thumbnails-for-homepage/agency-homepage.jpg"
+        }
+    ]
+}

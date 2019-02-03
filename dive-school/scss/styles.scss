@@ -1,0 +1,207 @@
+//Import utilities
+@import "../shared/utilities";
+
+//Variables
+$black:#041315;
+$white:#eaf8f9;
+
+$blue_pale:#BDE7EA;
+$blue_light:#4CC1C5;
+$blue_mid:#08495C;
+$blue_bright:#0961A0;
+
+
+// $menu: rgba(8, 73, 92, 0.9);
+$menu: rgba(4, 19, 21, 0.8);
+$accent_alpha: rgba(243, 211, 189, 0.85);
+$black_alpha: rgba(4, 19, 21, 0.6);
+$black_alpha_dark: rgba(4, 19, 21, 0.75);
+
+
+$accent_light:#F3D3BD;
+
+
+* {
+  box-sizing:border-box;
+  margin:0 0;
+  padding:0;
+  font-family: 'Days One', sans-serif;
+}
+
+body, html {
+  height:100%;
+  background-color: $accent_light;
+}
+
+a {
+  text-decoration: none;
+
+}
+
+.container {
+  display:block;
+  height:100%;
+  position: relative;
+  background:url("https://res.cloudinary.com/duua3lsu1/image/upload/v1527021755/theme-sandbox/diving-legs-compress.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: cover;
+}
+
+.heading {
+  background-color:$black_alpha_dark;
+  padding:em(8);
+  position: relative;
+  display:block;
+  &__icon {
+    width:em(20);
+  }
+  &__title {
+    color:$blue_pale;
+    padding:em(20) em(20) em(20) em(10);
+    text-align: center;
+  }
+}
+
+.menu {
+  width:em(200);
+  height:100%;
+  overflow: hidden;
+  padding-left:em(1);
+  padding-top:em(5);
+  background-color: $menu;
+  border-right: em(3) solid $accent_alpha;
+  -webkit-box-shadow: 10px 0px 10px 0px rgba(4,19,21,0.6);
+  -moz-box-shadow: 10px 0px 10px 0px rgba(4,19,21,0.6);
+  box-shadow: 10px 0px 10px 0px rgba(4,19,21,0.6);
+
+  &__item {
+    display:block;
+    font-size: em(24);
+    transition: 0.3s;
+    padding-left: em(2);
+    color:$blue_pale;
+    &:hover {
+      background-color: $accent_alpha;
+      color:$blue_mid;
+    }
+  }
+  &__cta {
+    display:block;
+    font-size: em(24);
+    width:80%;
+    transition: 0.3s;
+    margin-left: em(2);
+    margin-top: em(5);
+    margin-bottom: em(5);
+    text-align: center;
+    border-radius:em(2);
+    color:$blue_mid;
+    background-color: $accent_light;
+    -webkit-box-shadow: 0px 5px 13px 0px rgba(4,19,21,0.7);
+    -moz-box-shadow: 0px 5px 13px 0px rgba(4,19,21,0.7);
+    box-shadow: 0px 5px 13px 0px rgba(4,19,21,0.7);
+  }
+  &__social {
+    margin:em(20) auto;
+    display:flex;
+    padding-left: em(2);
+    justify-content: flex-start;
+    i {
+      color:$blue_light;
+      font-size: em(18);
+      margin-right: em(12);
+    }
+  }
+  &__additional {
+
+    padding-left: em(2);
+    a {
+      font-size: em(14);
+      color:$blue_mid;
+      display:block;
+    }
+  }
+}
+
+.main {
+  width:65%;
+  &__overlay {
+    width:100%;
+    height:100%;
+    opacity:0.4;
+  }
+}
+
+
+//Tablet and smaller screens view
+@media only screen and (min-width: 640px) {
+
+  .container {
+    display:flex;
+  }
+  .heading {
+    background-color: $black_alpha;
+    position:absolute;
+    top:em(20);
+    z-index:10;
+    right:em(0);
+    border-left: em(10) solid $blue_pale;
+    padding:em(20) em(20) em(20) em(0);
+    &__icon {
+      width:em(20);
+    }
+    &__title {
+      padding:em(20) em(20) em(20) em(10);
+      border-left: em(10) solid $blue_light;
+    }
+  }
+  .menu {
+    min-width:35%;
+    padding-top:0;
+    border-right: em(6) solid $accent_alpha;
+    &__item {
+      font-size: em(36);
+    }
+    &__cta {
+      font-size: em(36);
+    }
+    &__social {
+      i {
+        font-size: em(28);
+      }
+    }
+    &__additional {
+      margin-top: em(36);
+      a {
+        font-size: em(16);
+      }
+    }
+  }
+  .main {
+    height:100%;
+  }
+}
+
+@media only screen and (min-width: 1300px) {
+  .menu {
+    &__item {
+      font-size: em(64);
+    }
+    &__cta {
+      font-size: em(64);
+    }
+    &__social {
+      i {
+        font-size: em(34);
+      }
+    }
+    &__additional {
+      margin-top: em(48);
+      a {
+        font-size: em(16);
+      }
+    }
+  }
+}

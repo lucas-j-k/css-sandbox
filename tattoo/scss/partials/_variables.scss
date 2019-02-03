@@ -1,0 +1,48 @@
+//Variables for tattoo studio theme
+
+//Fill in the base colors here:
+$primary: #9A2C1D;
+$secondary: #339678;
+$tertiary: #B98F47;
+$black: #1C1818;
+$white: #F0F0E2;
+
+
+//Modifiers to give a wider range of colours to use in the design:
+$primary-dark: darken($primary, 20%);
+$primary-light: lighten($primary, 20%);
+$primary-lighter: lighten($primary, 35%);
+
+$secondary-dark: darken($secondary, 20%);
+$secondary-light: lighten($secondary, 20%);
+$secondary-lighter: lighten($secondary, 35%);
+
+$tertiary-dark: darken($tertiary, 20%);
+$tertiary-light: lighten($tertiary, 20%);
+$tertiary-lighter: lighten($tertiary, 35%);
+
+//Range of grays:
+$grey-20: lighten($black, 80%);
+$grey-40: lighten($black, 60%);
+$grey-60: lighten($black, 40%);
+$grey-80: lighten($black, 20%);
+
+
+//Gradients:
+
+@mixin gradient-prim {
+  background: #9a2c1d; /* Old browsers */
+  background: -moz-linear-gradient(top, #9a2c1d 2%, #1c1818 100%, #7db9e8 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, #9a2c1d 2%,#1c1818 100%,#7db9e8 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, #9a2c1d 2%,#1c1818 100%,#7db9e8 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#9a2c1d', endColorstr='#7db9e8',GradientType=0 ); /* IE6-9 */
+}
+
+
+@mixin gradient-sec {
+  background: rgba(51,150,120,1); /* Old browsers */
+  background: -moz-linear-gradient(top, rgba(51,150,120,0.8) 2%, rgba(28,24,24,0.8) 100%, rgba(125,185,232,0.8) 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, rgba(51,150,120,0.8) 2%,rgba(28,24,24,0.8) 100%,rgba(125,185,232,0.8) 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, rgba(51,150,120,0.8) 2%,rgba(28,24,24,0.8) 100%,rgba(125,185,232,0.8) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#339678', endColorstr='#7db9e8',GradientType=0 ); /* IE6-9 */
+}

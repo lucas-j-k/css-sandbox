@@ -1,0 +1,127 @@
+@media only screen and (min-width: 768px) {
+
+  .mobile-header {
+    height: em(30);
+    padding:0;
+    &__title {
+      font-size: em(16);
+      padding-left: em(10);
+    }
+    &__toggle {
+      display:none;
+    }
+  }
+
+  .header {
+    width:100%;
+    background-color: rgba($white, 0.85);
+    height: em(30);
+    position:fixed;
+    padding:0;
+    top: em(30);
+    &__nav {
+      padding: 0 em(10);
+    }
+    &__nav-list {
+      display: flex;
+      justify-content: flex-start;
+      height: em(30);
+      align-items: center;
+    }
+    &__nav-item {
+      margin:0 em(10) 0 0;
+      padding:0;
+      border:0;
+      font-size: em(16);
+    }
+  }
+
+  .social-links {
+    display:flex;
+    background-color: rgba($black, 0.8);
+    width:auto;
+    top:em(100);
+    flex-direction: column;
+    &__icon {
+      margin:em(10);
+      font-size:em(20);
+    }
+  }
+
+  .carousel {
+    &__title {
+      font-size:em(48);
+    }
+    &__subtitle {
+      font-size:em(36);
+    }
+  }
+
+  .upcoming {
+    display: flex;
+    &__event {
+      width:30%;
+      padding: 0;
+    }
+    &__text {
+      width:100%;
+      margin:0;
+      padding-bottom:em(15);
+      background-color: rgba($black, 0.8);
+    }
+    &__title {
+      font-size: em(20);
+    }
+    &__description {
+      font-size: em(18);
+    }
+    &__more-info {
+      font-size: em(16);
+    }
+  }
+
+  .section-head {
+    &__text {
+      font-size: em(16);
+    }
+  }
+
+  .galleries {
+    &__item {
+      display:flex;
+      border-top: solid $primary em(3);
+      &:nth-child(odd){
+        .galleries__text {
+          order:-1;
+        }
+      }
+    }
+    &__image {
+      width:70%;
+      height:50vh;
+    }
+    &__text {
+      width:30%;
+    }
+    &__title {
+      padding:em(5) em(10);
+    }
+    &__description {
+      padding:em(5) em(10);
+    }
+  }
+
+  .find-us {
+    display:flex;
+    &__map {
+      width: 50%;
+    }
+    &__details {
+      width:50%;
+    }
+    &__left, &__right {
+      display:inline-block;
+    }
+  }
+
+}

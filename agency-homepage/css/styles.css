@@ -1,0 +1,220 @@
+
+/* 
+Lime Mid: #CBEB34
+Lime Light: #D4F456
+Grey mid: #868685
+Grey dark: #1a1a1a
+Grey light: #B8B9B8
+White: #e9e9e9 
+
+font-family: 'Josefin Sans', sans-serif;
+font-family: 'Libre Franklin', sans-serif;
+
+*/
+
+
+body {
+    background: url('https://res.cloudinary.com/duua3lsu1/image/upload/v1543679045/theme-sandbox/mountains-sm.jpg');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-sizing: border-box;
+    margin: 0px;
+}
+
+
+/* =============================================== */
+/* Utility classes */
+
+.font-title {
+    font-family: 'Source Serif Pro', serif;
+}
+
+.font-body {
+    font-family: 'Libre Franklin', sans-serif;
+}
+
+.shadow {
+    -webkit-box-shadow: 0px 5px 10px 2px rgba(0,0,0,0.6);
+    -moz-box-shadow: 0px 5px 10px 2px rgba(0,0,0,0.6);
+    box-shadow: 0px 5px 10px 2px rgba(0,0,0,0.6);
+}
+
+.spinning {
+    -webkit-animation:spin 4s linear infinite;
+    -moz-animation:spin 4s linear infinite;
+    animation:spin 4s linear infinite;
+}
+
+
+@-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
+@-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
+@keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
+
+/* End Utility classes */
+/* =============================================== */
+
+
+
+.container {
+    height: 100vh;
+}
+
+.nav-wrap {
+    background-color: rgba(212, 244, 86, 0.8);
+    width: 60%;
+}
+
+.nav-list {
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+}
+
+.nav-item {
+    padding: 10px;
+}
+
+.nav-item:hover {
+    background-color: #CBEB34;
+}
+
+.nav-link {
+    text-decoration: none;
+    font-weight: bold;
+    color: #1a1a1a;
+}
+
+.header-panel {
+    position: relative;
+}
+
+.branding-wrap {
+    background-color: rgba(205, 235, 52, 0.9);
+    padding-top: 15px;
+    padding-bottom: 15px;
+    display: flex;
+    align-items: center;
+}
+
+.logo-wrap {
+    margin-right: 5px;
+}
+
+.logo-wrap i {
+    color: #1a1a1a;
+    font-size: 48px;
+    margin-left: 15px;
+}
+
+.title {
+    color: #ffffff;
+    margin: 0;
+    padding: 10px;
+    letter-spacing: 3px;
+    font-size: 28px;
+}
+
+.nav-list {
+    /* display: flex; */
+}
+
+.tab-row {
+    display: flex;
+}
+
+.cta-tab {
+    padding: 15px;
+    background-color: #1a1a1a;
+    border-bottom-right-radius: 10px; 
+    display: flex;
+}
+
+.cta-tab p {
+    margin-right: 10px;
+}
+
+.cta-link {
+    color: rgba(212, 244, 86, 0.8);
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 16px;
+}
+
+.cta-icon {
+    padding-left: 5px;
+}
+
+.secondary-nav-wrap {
+    width: 100%;
+    background-color: rgba(26, 26, 26, 0.9);
+}
+
+.secondary-nav {
+    font-size: 14px;
+    justify-content: center;
+    padding: 10px;
+    margin: 0px;
+    list-style-type: none;
+}
+
+.secondary-nav-item {
+    padding: 5px;
+}
+
+.secondary-nav-link {
+    color: #e9e9e9;
+    text-decoration: none;
+}
+
+
+@media only screen and (min-width: 728px) {
+
+    .header-panel {
+        width:50%;
+        margin-left: auto;
+        margin-right: auto;    
+        top: 50%;
+    }
+
+    .nav-wrap {
+        width: 100%;
+    }
+
+    .nav-list {
+        display: flex;
+    }
+
+    .tab-row {
+        justify-content: flex-end;
+    }
+
+    .cta-tab {
+        border-bottom-left-radius: 10px; 
+    }
+
+    .branding-wrap {
+        padding-top: 0px;
+        padding-bottom: 0px;
+    }
+
+    .logo-wrap i {
+        font-size: 28px;
+    }
+
+    .secondary-nav-wrap {
+        position: fixed;
+        bottom: 0;
+    }
+
+    .secondary-nav {
+        display: flex;
+    }
+
+    .secondary-nav-item {
+        margin-right: 20px;
+        margin-left: 20px;
+        padding: 0;
+    }
+}

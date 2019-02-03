@@ -1,0 +1,307 @@
+
+.page-wrap {}
+
+.mobile-header {
+  background-color: $primary;
+  color:$white;
+  height:em(60);
+  position: fixed;
+  width: 100%;
+  top:0;
+  z-index: 50;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding-left: em(15);
+  &__toggle {
+    margin-right: em(10);
+    color: inherit;
+    font-size: em(24);
+  }
+  &__title {
+    color:rgba($white, 0.6);
+    font-size: em(28);
+    letter-spacing: em(5);
+  }
+}
+
+.header {
+  background-color: rgba($white, 0.75);
+  position:fixed;
+  left:0;
+  width:70%;
+  top:em(60);
+  z-index:100;
+  transition: 0.7s;
+  overflow-x: hidden;
+  @include box-shade;
+  &__close-btn {
+    color:$black;
+    border-radius: 50%;
+    line-height: em(18);
+    font-size: em(18);
+  }
+  &__brand {
+    margin-bottom: em(15);
+    display:none;
+  }
+
+  &__title {
+    color:$white;
+    font-size: em(24);
+    white-space: nowrap;
+    padding: em(3);
+    overflow-x: hidden;
+    text-align: left;
+  }
+
+  &__nav {
+    padding-top:em(10);
+    padding-bottom:em(10);
+  }
+  &__nav-item {
+    margin-bottom:em(10);
+    color:$black;
+    padding-left:em(5);
+    border-bottom: solid $primary em(2);
+    display:inline-block;
+    white-space: nowrap;
+    font-size: em(28);
+  }
+}
+
+
+.social-links {
+  background-color: rgba($tertiary-dark, 0.85);
+  padding:em(5);
+  width:30%;
+  position:absolute;
+  top:em(60);
+  right:0;
+  display:inline;
+  z-index: 90;
+  &__icon {
+    margin-left:em(10);
+    i {
+      font-size:em(20);
+      color:$white;
+    }
+  }
+}
+
+
+.carousel {
+  height:100vh;
+  background-color: $black;
+  width:100%;
+  overflow-x: hidden;
+  &__slide {
+    width:100%;
+    position:relative;
+    height:100%;
+    background-color: $primary-light;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    animation-name: fadeIn, fadeOut;
+    animation-duration: 1s, 1s;
+    animation-delay:0s, 9s;
+    &--one {background-image: url("https://res.cloudinary.com/duua3lsu1/image/upload/v1527537325/theme-sandbox/abstract-2.jpg");}
+    &--two {background-image: url("https://res.cloudinary.com/duua3lsu1/image/upload/v1527537291/theme-sandbox/ceiling.jpg");}
+    &--three {background-image: url("https://res.cloudinary.com/duua3lsu1/image/upload/v1527537299/theme-sandbox/bust-room.jpg");}
+  }
+  &__text {
+    background-color: rgba($black, 0.85);
+    color:$secondary-light;
+    position: absolute;
+    left:em(10);
+    bottom:em(10);
+    padding:em(3);
+  }
+  &__title {
+    font-size: em(42);
+  }
+  &__subtitle {
+    font-size: em(24);
+    color:$secondary;
+  }
+}
+
+
+.section-head {
+  background-color:rgba($black, 0.95);
+  padding:em(10);
+  color:$secondary-light;
+  border-top: solid em(3) $primary;
+}
+
+.upcoming {
+  padding-top:em(5);
+  padding-bottom:em(5);
+  background-color: $tertiary-light;
+  &__event {
+    @include box-shade;
+    width:95%;
+    margin:em(20) auto;
+    height:50vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    &--one {background-image: url("https://res.cloudinary.com/duua3lsu1/image/upload/v1527537314/theme-sandbox/artist-painting.jpg");}
+    &--two {background-image: url("https://res.cloudinary.com/duua3lsu1/image/upload/v1527537303/theme-sandbox/bird-paintings.jpg");}
+    &--three {background-image: url("https://res.cloudinary.com/duua3lsu1/image/upload/v1527537259/theme-sandbox/glass-blowing.jpg");}
+  }
+  &__text {
+    background-color: rgba($tertiary-dark, 0.9);
+    margin:em(10);
+    padding:em(8);
+    width:80%;
+  }
+  &__title {
+    color:$white;
+    font-size: em(24);
+  }
+  &__description {
+    color:$tertiary-light;
+    font-size: em(18);
+    margin-bottom: em(10);
+  }
+  &__more-info {
+    color:$white;
+    padding:em(5);
+    background-color: $primary-dark;
+    font-size: em(18);
+    i {
+      color:$primary-light;
+      font-size: em(18);
+    }
+  }
+}
+
+
+.galleries {
+  &__item {
+    &--one {
+      .galleries__image {
+        background-image: url("https://res.cloudinary.com/duua3lsu1/image/upload/v1527537265/theme-sandbox/gallery-hall.jpg");
+      }
+    }
+    &--two {
+      .galleries__image {
+        background-image: url("https://res.cloudinary.com/duua3lsu1/image/upload/v1527537255/theme-sandbox/installation.jpg");
+      }
+    }
+    &--three {
+      .galleries__image {
+        background-image: url("https://res.cloudinary.com/duua3lsu1/image/upload/v1527537317/theme-sandbox/abstract-on-wall.jpg");
+      }
+    }
+    &--four {
+      .galleries__image {
+        background-image: url("https://res.cloudinary.com/duua3lsu1/image/upload/v1527537274/theme-sandbox/face-statue.jpg");
+      }
+    }
+    //Alternate the text align and border styles for the gallery text:
+    &:nth-child(even) {
+      .galleries__text {
+        border-right:em(20) solid $primary;
+        text-align: right;
+      }
+      .galleries__title {
+        border-right:em(25) solid $primary;
+        text-align: right;
+      }
+      .galleries__description {
+        border-right:em(15) solid $primary;
+        text-align: right;
+      }
+    }
+    &:nth-child(odd) {
+      .galleries__text {
+        border-left:em(20) solid $primary;
+        text-align: left;
+      }
+      .galleries__title {
+        border-left:em(25) solid $primary;
+        text-align: left;
+      }
+      .galleries__description {
+        border-left:em(15) solid $primary;
+        text-align: left;
+      }
+    }
+  }
+  &__image {
+    width: 100%;
+    height:25vh;
+    background-color: $black;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  &__text {
+    background-color: $white;
+  }
+  &__title {
+    font-size: em(22);
+    padding:em(5);
+    color:$black;
+  }
+  &__description {
+    font-size: em(16);
+    padding:em(3);
+    color:$secondary-dark;
+  }
+}
+
+
+.find-us {
+
+  &__map {
+    background-image: url('https://res.cloudinary.com/duua3lsu1/image/upload/v1527537244/theme-sandbox/map.png');
+    min-height:40vh;
+    background-position: top left;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position:relative;
+  }
+  &__overlay {
+    position: absolute;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    background-color: rgba($black, 0.2);
+  }
+  &__details {
+    background-color: $tertiary-dark;
+    color:$white;
+    font-size: em(18);
+    padding-top: em(15);
+    padding-bottom: em(15);
+  }
+  &__left {
+    border-bottom: solid em(2) $primary;
+  }
+  &__left, &__right {
+    padding:em(10);
+    display: inline-block;
+  }
+}
+
+
+.footer {
+  background-color: $black;
+  color:$tertiary-light;
+  padding:em(10);
+  border-top:em(2) solid $primary;
+  &__menu {
+    //The columns property tells browser to render list in 2 columns
+    columns: 2;
+    -webkit-columns: 2;
+    -moz-columns: 2;
+  }
+}

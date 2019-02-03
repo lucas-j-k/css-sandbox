@@ -1,0 +1,14 @@
+// Tattoo Studio Theme
+
+//Variables:
+@import 'partials/resets';
+@import 'partials/mixins';
+@import "../shared/utilities";
+@import 'partials/variables';
+
+
+//Base mobile stylesheet
+@import 'partials/mobile';
+
+//Desktop stylesheet
+@import 'partials/desktop';
