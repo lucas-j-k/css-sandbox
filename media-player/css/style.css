@@ -1,0 +1,217 @@
+/* Setup + resets */
+
+* {
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+ul {
+    padding: 0;
+}
+
+li {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+/* Utilities */
+.shadow {
+    -webkit-box-shadow: 0px 5px 20px 0px rgba(0,0,0,0.9);
+    -moz-box-shadow: 0px 5px 20px 0px rgba(0,0,0,0.9);
+    box-shadow: 0px 5px 20px 0px rgba(0,0,0,0.9);
+}
+
+
+
+/* Base mobile styles */
+
+
+body {
+    background-color: #1d1f1f;
+    background: url('https://source.unsplash.com/random/150x150');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 100vh; 
+}
+
+.container {
+    width: 100%;
+    min-height: 100vh;
+    background-color: rgba(29, 31, 31, 0.95);
+    overflow: auto;
+}
+
+.player {
+    color: #c2c7c7;
+    width: 98%;
+    margin: 0 auto;
+    /* position: relative; */
+}
+
+/* .player-background {
+    background: url('https://source.unsplash.com/random/200x200');
+    background-position: center;
+    background-size: cover;
+    filter: blur(30px) grayscale(1);
+    -webkit-filter: blur(30px) grayscale(0.8);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    overflow: hidden;
+    z-index: -1;
+    transform: scale(1.1);
+} */
+
+.player-body {
+    min-height: 500px;
+    padding: 8px;
+}
+
+.player-overlay {
+    padding-top: 24px;
+}
+
+.player-thumbnail {
+    width: 150px;
+    height: 150px;
+    background: url('https://source.unsplash.com/random/150x150');
+    background-position: center;
+    background-size: cover;
+    margin: 12px auto;
+}
+
+.player-text {
+    width: 80%;
+    margin: 24px auto;
+    text-align: center;
+}
+
+.player-title {
+    font-size: 22px;
+    margin: 6px 0;
+}
+
+.player-subtitle {
+    font-size: 18px;
+    font-weight: normal;
+    color: #a1a5a5;
+    margin-top: 0;
+}
+
+.now-playing {
+    font-size: 16px;
+    color: #a1a5a5;
+}
+
+.divider {
+    width: 100px;
+    height: 4px;
+    display: block;
+    margin: 8px auto;
+    background-color: #d1df11;
+}
+
+.player-controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.player-icon {
+    margin: 0 8px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.player-icon:hover {
+    cursor: pointer;
+}
+
+.player-icon:hover i {
+    color: #d1df11;
+}
+
+
+.player-icon span {
+    display: inline-block;
+}
+
+.player-icon--lg {
+    margin: 0 16px;
+}
+
+.player-icon--active {
+    color: #d1df11;
+}
+
+.player-icon--play {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    padding: 8px;
+    border: solid 1px #a1a5a5;
+}
+
+.player-icon--play:hover {
+    border: solid 1px #d1df11;
+}
+
+.player-icon--play i {
+    padding-left: 5px;
+}
+
+
+.player-icon--md i {
+    font-size: 18px;
+}
+
+.player-icon--lg i {
+    font-size: 36px;
+}
+
+
+.player-timeline {
+    padding: 16px;
+    margin: 8px auto;
+}
+
+.player-trackbar {
+    width: 90%;
+    margin: 0 auto;
+    height: 10px;
+    background-color: #666969;
+    display: block;
+}
+
+.player-progress {
+    height: 10px;
+    width: 25%;
+    background-color: #d1df11;
+    display: block;
+    border-right: 4px solid #c2c7c7;
+}
+
+
+/* Desktop */
+@media only screen and (min-width: 1024px) {
+
+
+
+
+    .player-text {
+        width: 40%;
+    }
+
+    .player-control-widget {
+        width: 80%;
+        margin: 48px auto;
+    }
+  }

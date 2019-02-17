@@ -29,6 +29,11 @@
             "title" : "Agency Homepage",
             "directory" : "agency-homepage",
             "thumbnail" : "https://res.cloudinary.com/duua3lsu1/image/upload/v1543680045/theme-sandbox/Thumbnails-for-homepage/agency-homepage.jpg"
+        },
+        {
+            "title" : "Media Player",
+            "directory" : "media-player",
+            "thumbnail" : "https://res.cloudinary.com/duua3lsu1/image/upload/v1550428012/theme-sandbox/media-player.png"
         }
     ]
 }
