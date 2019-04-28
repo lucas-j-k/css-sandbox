@@ -1,0 +1,33 @@
+@media only screen and (min-width: $breakpoint-md) {
+
+   
+    .scoreboard {
+        width: 75%;
+        margin: 0 auto;
+        &__header {
+            text-align: center;
+        }
+    }
+    .scores-panel {
+        &__block {
+            &--left {
+                text-align: right;
+            }
+        }
+    }
+    .update-block {
+        &__content {
+            width: 90%; 
+        }
+        &__footer {
+            margin-top: $spacing-lg;
+        }
+    }
+    .summary-heading {
+        padding-left: $spacing-lg;
+    }
+    .match-summary {
+        padding-left: $spacing-lg;
+    }
+
+}

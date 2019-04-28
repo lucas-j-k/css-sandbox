@@ -1,14 +1,19 @@
 {
     "projects" : [
         {
+            "title" : "Sports Live Feed",
+            "directory" : "sports-live-feed",
+            "thumbnail" : "https://source.unsplash.com/random/400x400"
+        },
+        {
+            "title" : "Media Player",
+            "directory" : "media-player",
+            "thumbnail" : "https://res.cloudinary.com/duua3lsu1/image/upload/v1550428012/theme-sandbox/media-player.png"
+        },
+        {
             "title" : "Dive School",
             "directory" : "dive-school",
             "thumbnail" : "https://res.cloudinary.com/duua3lsu1/image/upload/v1530219569/theme-sandbox/Thumbnails-for-homepage/dive-thumb.jpg"
-        },
-        {
-            "title" : "Basic Signup",
-            "directory" : "basic-signup",
-            "thumbnail" : "https://res.cloudinary.com/duua3lsu1/image/upload/v1530219569/theme-sandbox/Thumbnails-for-homepage/landing-page.jpg"
         },
         {
             "title" : "Menswear",
@@ -31,9 +36,9 @@
             "thumbnail" : "https://res.cloudinary.com/duua3lsu1/image/upload/v1543680045/theme-sandbox/Thumbnails-for-homepage/agency-homepage.jpg"
         },
         {
-            "title" : "Media Player",
-            "directory" : "media-player",
-            "thumbnail" : "https://res.cloudinary.com/duua3lsu1/image/upload/v1550428012/theme-sandbox/media-player.png"
+            "title" : "Basic Signup",
+            "directory" : "basic-signup",
+            "thumbnail" : "https://res.cloudinary.com/duua3lsu1/image/upload/v1530219569/theme-sandbox/Thumbnails-for-homepage/landing-page.jpg"
         }
     ]
 }

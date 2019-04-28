@@ -1,0 +1,23 @@
+{
+  "name": "css-sandbox-rebuild",
+  "version": "1.0.0",
+  "description": "+ PHP site to host CSS experiments and layout tests.\r + Each project is inside its own subdirectory, with separate CSS and JS assets.\r + Metadata is stored in config.json.\r + Index.php loads this JSON file and uses it to build the menu on the homepage.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch-sass": "node-sass --watch sports-live-feed/scss -o sports-live-feed/css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lucas-j-k/css-sandbox.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lucas-j-k/css-sandbox/issues"
+  },
+  "homepage": "https://github.com/lucas-j-k/css-sandbox#readme",
+  "devDependencies": {
+    "node-sass": "^4.11.0"
+  }
+}

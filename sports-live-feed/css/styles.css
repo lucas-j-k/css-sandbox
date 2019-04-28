@@ -1,0 +1,688 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0; }
+
+a {
+  text-decoration: none;
+  color: inherit; }
+
+ul {
+  list-style: none;
+  list-style-type: none; }
+
+div {
+  overflow: auto; }
+
+/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
+/* Document
+     ========================================================================== */
+/**
+   * 1. Correct the line height in all browsers.
+   * 2. Prevent adjustments of font size after orientation changes in iOS.
+   */
+html {
+  line-height: 1.15;
+  /* 1 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */ }
+
+/* Sections
+     ========================================================================== */
+/**
+   * Remove the margin in all browsers.
+   */
+body {
+  margin: 0; }
+
+/**
+   * Render the `main` element consistently in IE.
+   */
+main {
+  display: block; }
+
+/**
+   * Correct the font size and margin on `h1` elements within `section` and
+   * `article` contexts in Chrome, Firefox, and Safari.
+   */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0; }
+
+/* Grouping content
+     ========================================================================== */
+/**
+   * 1. Add the correct box sizing in Firefox.
+   * 2. Show the overflow in Edge and IE.
+   */
+hr {
+  box-sizing: content-box;
+  /* 1 */
+  height: 0;
+  /* 1 */
+  overflow: visible;
+  /* 2 */ }
+
+/**
+   * 1. Correct the inheritance and scaling of font size in all browsers.
+   * 2. Correct the odd `em` font sizing in all browsers.
+   */
+pre {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */ }
+
+/* Text-level semantics
+     ========================================================================== */
+/**
+   * Remove the gray background on active links in IE 10.
+   */
+a {
+  background-color: transparent; }
+
+/**
+   * 1. Remove the bottom border in Chrome 57-
+   * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+   */
+abbr[title] {
+  border-bottom: none;
+  /* 1 */
+  text-decoration: underline;
+  /* 2 */
+  text-decoration: underline dotted;
+  /* 2 */ }
+
+/**
+   * Add the correct font weight in Chrome, Edge, and Safari.
+   */
+b,
+strong {
+  font-weight: bolder; }
+
+/**
+   * 1. Correct the inheritance and scaling of font size in all browsers.
+   * 2. Correct the odd `em` font sizing in all browsers.
+   */
+code,
+kbd,
+samp {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */ }
+
+/**
+   * Add the correct font size in all browsers.
+   */
+small {
+  font-size: 80%; }
+
+/**
+   * Prevent `sub` and `sup` elements from affecting the line height in
+   * all browsers.
+   */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline; }
+
+sub {
+  bottom: -0.25em; }
+
+sup {
+  top: -0.5em; }
+
+/* Embedded content
+     ========================================================================== */
+/**
+   * Remove the border on images inside links in IE 10.
+   */
+img {
+  border-style: none; }
+
+/* Forms
+     ========================================================================== */
+/**
+   * 1. Change the font styles in all browsers.
+   * 2. Remove the margin in Firefox and Safari.
+   */
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit;
+  /* 1 */
+  font-size: 100%;
+  /* 1 */
+  line-height: 1.15;
+  /* 1 */
+  margin: 0;
+  /* 2 */ }
+
+/**
+   * Show the overflow in IE.
+   * 1. Show the overflow in Edge.
+   */
+button,
+input {
+  /* 1 */
+  overflow: visible; }
+
+/**
+   * Remove the inheritance of text transform in Edge, Firefox, and IE.
+   * 1. Remove the inheritance of text transform in Firefox.
+   */
+button,
+select {
+  /* 1 */
+  text-transform: none; }
+
+/**
+   * Correct the inability to style clickable types in iOS and Safari.
+   */
+button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: button; }
+
+/**
+   * Remove the inner border and padding in Firefox.
+   */
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+  border-style: none;
+  padding: 0; }
+
+/**
+   * Restore the focus styles unset by the previous rule.
+   */
+button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
+  outline: 1px dotted ButtonText; }
+
+/**
+   * Correct the padding in Firefox.
+   */
+fieldset {
+  padding: 0.35em 0.75em 0.625em; }
+
+/**
+   * 1. Correct the text wrapping in Edge and IE.
+   * 2. Correct the color inheritance from `fieldset` elements in IE.
+   * 3. Remove the padding so developers are not caught out when they zero out
+   *    `fieldset` elements in all browsers.
+   */
+legend {
+  box-sizing: border-box;
+  /* 1 */
+  color: inherit;
+  /* 2 */
+  display: table;
+  /* 1 */
+  max-width: 100%;
+  /* 1 */
+  padding: 0;
+  /* 3 */
+  white-space: normal;
+  /* 1 */ }
+
+/**
+   * Add the correct vertical alignment in Chrome, Firefox, and Opera.
+   */
+progress {
+  vertical-align: baseline; }
+
+/**
+   * Remove the default vertical scrollbar in IE 10+.
+   */
+textarea {
+  overflow: auto; }
+
+/**
+   * 1. Add the correct box sizing in IE 10.
+   * 2. Remove the padding in IE 10.
+   */
+[type="checkbox"],
+[type="radio"] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */ }
+
+/**
+   * Correct the cursor style of increment and decrement buttons in Chrome.
+   */
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+  height: auto; }
+
+/**
+   * 1. Correct the odd appearance in Chrome and Safari.
+   * 2. Correct the outline style in Safari.
+   */
+[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  outline-offset: -2px;
+  /* 2 */ }
+
+/**
+   * Remove the inner padding in Chrome and Safari on macOS.
+   */
+[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none; }
+
+/**
+   * 1. Correct the inability to style clickable types in iOS and Safari.
+   * 2. Change font properties to `inherit` in Safari.
+   */
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  /* 1 */
+  font: inherit;
+  /* 2 */ }
+
+/* Interactive
+     ========================================================================== */
+/*
+   * Add the correct display in Edge, IE 10+, and Firefox.
+   */
+details {
+  display: block; }
+
+/*
+   * Add the correct display in all browsers.
+   */
+summary {
+  display: list-item; }
+
+/* Misc
+     ========================================================================== */
+/**
+   * Add the correct display in IE 10+.
+   */
+template {
+  display: none; }
+
+/**
+   * Add the correct display in IE 10.
+   */
+[hidden] {
+  display: none; }
+
+body {
+  font-family: "Overpass", sans-serif;
+  line-height: 1.25; }
+
+.container {
+  width: 100%; }
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0.5rem 0; }
+
+p {
+  margin: 0.5rem 0; }
+
+.header-bar__block {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end; }
+
+.header-bar__right {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center; }
+
+.header-bar__logo {
+  font-weight: bold;
+  font-size: 1.125rem;
+  margin-left: 0.5rem;
+  margin-bottom: 0.75rem; }
+
+.header-bar__button {
+  padding: 0.75rem;
+  margin-left: 0.5rem; }
+  .header-bar__button span {
+    line-height: 1.125rem;
+    font-size: 1.125rem; }
+
+.main-nav__menu {
+  padding: 0.5rem; }
+  .main-nav__menu li {
+    font-size: 1.125rem;
+    margin-bottom: 1rem; }
+
+.widgets__desktop {
+  display: none; }
+
+.summary-panel {
+  background-color: #081111;
+  color: #fffbf1; }
+
+.summary-image {
+  width: 100%;
+  height: 400px;
+  background-size: cover;
+  background-position: center; }
+
+.scores-panel {
+  display: flex;
+  justify-content: center; }
+  .scores-panel__block {
+    margin: 0 0.5rem;
+    width: 33%; }
+  .scores-panel__meta {
+    text-align: center;
+    margin-top: 0.5rem; }
+  .scores-panel__scores {
+    font-weight: bold;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+    .scores-panel__scores div {
+      font-size: 1.5rem;
+      line-height: 1.5rem;
+      padding: 0.5rem;
+      margin: 0 0.25rem;
+      display: block;
+      background-color: #FA5005;
+      color: #fffbf1; }
+  .scores-panel__team span {
+    font-size: 1.125rem;
+    margin-bottom: 0.75rem;
+    display: block; }
+  .scores-panel__goals {
+    color: #bbd0d1; }
+    .scores-panel__goals li {
+      margin-bottom: 0.25rem; }
+
+.scoreboard__block {
+  width: 90%;
+  margin: 0.75rem auto; }
+
+.scoreboard__header {
+  padding: 0.5rem;
+  font-size: 1.125rem; }
+
+.scoreboard__header-date {
+  margin-right: 0.5rem; }
+
+.scoreboard__header-league {
+  font-weight: bold; }
+
+.match-summary ul {
+  list-style: disc;
+  padding-left: 1.5rem;
+  padding-right: 0.5rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem; }
+  .match-summary ul li {
+    margin-bottom: 0.5rem; }
+
+.summary-heading {
+  padding: 0.75rem; }
+
+.sidebar-heading {
+  margin-bottom: 0.75rem; }
+  .sidebar-heading span {
+    border-bottom: 2px solid #FA5005;
+    padding-bottom: 0.25rem;
+    padding-right: 0.5rem; }
+
+.feed-tabs ul {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center; }
+  .feed-tabs ul li {
+    padding: 0.75rem;
+    background-color: #2d4647;
+    color: #bbd0d1;
+    width: 25%;
+    text-align: center; }
+    .feed-tabs ul li:hover {
+      background-color: #bbd0d1;
+      color: #081111; }
+  .feed-tabs ul .active {
+    background-color: #bbd0d1;
+    color: #081111; }
+
+.feed-panel {
+  padding-top: 0.75rem; }
+
+.update-block {
+  width: 90%;
+  margin: 0.75rem auto;
+  background-color: #fffbf1;
+  padding: 0.75rem;
+  border-bottom: 1px solid #bbd0d1; }
+  .update-block:last-of-type {
+    border-bottom: none; }
+  .update-block__header {
+    padding: 0.5rem 0;
+    color: #152525;
+    font-weight: bold; }
+    .update-block__header p {
+      margin: 0.25rem 0; }
+  .update-block__tag {
+    padding: 0.5rem 0; }
+    .update-block__tag span {
+      border-bottom: 0.25rem solid #FA5005;
+      font-weight: bold; }
+  .update-block__footer .social-list {
+    display: flex;
+    justify-content: flex-end; }
+    .update-block__footer .social-list__item {
+      margin-right: 0.5rem; }
+      .update-block__footer .social-list__item a i {
+        font-size: 1.125rem; }
+
+.lineups {
+  width: 90%;
+  margin: 0.75rem auto;
+  background-color: #fffbf1;
+  padding: 0.75rem; }
+  .lineups .team {
+    margin-bottom: 0.75rem; }
+    .lineups .team__name {
+      font-size: 1.125rem;
+      font-weight: bold;
+      margin-bottom: 0.75rem; }
+    .lineups .team__player {
+      margin-bottom: 0.5rem;
+      display: flex;
+      align-items: center; }
+    .lineups .team__number {
+      font-weight: bold;
+      width: 10%;
+      margin-right: 0.75rem; }
+
+.stats {
+  width: 90%;
+  margin: 0.75rem auto;
+  background-color: #fffbf1;
+  padding: 0.75rem; }
+  .stats__key {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5rem;
+    margin-bottom: 0.75rem; }
+  .stats__keyname {
+    margin: 0 0.5rem;
+    line-height: 1.125rem;
+    font-size: 1.125rem; }
+  .stats__key-color {
+    width: 1.125rem;
+    height: 1.125rem;
+    display: block; }
+    .stats__key-color--one {
+      background-color: #152525; }
+    .stats__key-color--two {
+      background-color: #4b7072; }
+
+.stats-list__entry {
+  margin-bottom: 0.75rem;
+  padding: 0.5rem; }
+
+.stats-list__entry-title {
+  font-size: 1.125rem;
+  font-weight: bold; }
+
+.stats-list__bar-wrap {
+  display: flex;
+  margin: 0.5rem auto; }
+
+.stats-list__bar {
+  display: block;
+  padding: 0.5rem 0;
+  color: #fffbf1; }
+  .stats-list__bar--left {
+    background-color: #152525; }
+    .stats-list__bar--left span {
+      margin-left: 0.5rem; }
+  .stats-list__bar--right {
+    background-color: #4b7072;
+    text-align: right; }
+    .stats-list__bar--right span {
+      margin-right: 0.5rem; }
+
+.results {
+  width: 90%;
+  margin: 0.75rem auto;
+  background-color: #fffbf1;
+  padding: 0.75rem; }
+  .results__header {
+    margin-bottom: 0.75rem; }
+    .results__header h3 {
+      font-size: 1rem;
+      text-align: center;
+      text-transform: uppercase; }
+  .results__row {
+    margin-bottom: 0.75rem;
+    overflow: auto;
+    border-bottom: 1px solid #bbd0d1; }
+  .results__fixture {
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+  .results__team {
+    width: 40%;
+    padding: 0 0.5rem; }
+    .results__team--left {
+      text-align: right; }
+    .results__team--right {
+      text-align: left; }
+  .results__score-wrap {
+    width: 20%;
+    display: flex;
+    justify-content: center; }
+  .results__score {
+    font-size: 1rem;
+    line-height: 1rem;
+    padding: 0.5rem;
+    margin: 0 0.25rem;
+    display: block;
+    background-color: #FA5005;
+    color: #fffbf1; }
+  .results__timestamp {
+    text-align: center;
+    margin-top: 0.5rem; }
+
+.global-footer {
+  background-color: #152525;
+  color: #fffbf1; }
+  .global-footer__content {
+    width: 90%;
+    margin: 0 auto;
+    padding: 0.75rem; }
+  .global-footer__menu {
+    margin-top: 1rem;
+    display: flex;
+    flex-wrap: wrap; }
+  .global-footer__menu-item {
+    margin-bottom: 0.5rem;
+    width: 50%; }
+
+@media only screen and (min-width: 728px) {
+  .scoreboard {
+    width: 75%;
+    margin: 0 auto; }
+    .scoreboard__header {
+      text-align: center; }
+  .scores-panel__block--left {
+    text-align: right; }
+  .update-block__content {
+    width: 90%; }
+  .update-block__footer {
+    margin-top: 1rem; }
+  .summary-heading {
+    padding-left: 1rem; }
+  .match-summary {
+    padding-left: 1rem; } }
+
+@media only screen and (min-width: 1024px) {
+  .header-bar {
+    display: flex; }
+    .header-bar__logo {
+      margin-bottom: 0; }
+  .main-nav {
+    display: flex !important; }
+  .feed-panel {
+    display: flex;
+    justify-content: space-around;
+    width: 90%;
+    margin: 0 auto;
+    margin-bottom: 1.5rem; }
+    .feed-panel__main {
+      width: 60%; }
+    .feed-panel__sidebar {
+      width: 35%; }
+  .match-summary {
+    margin-bottom: 1rem; }
+  .sidebar-widget {
+    border-left: 1px solid #bbd0d1;
+    padding-left: 1.5rem;
+    display: block !important; }
+  .feed-tabs {
+    display: none; }
+  .scores-panel__block--center {
+    width: 10%; }
+  .main-nav {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; }
+    .main-nav__menu {
+      display: flex;
+      align-items: center;
+      padding: 0.5rem; }
+      .main-nav__menu li {
+        font-size: 1rem;
+        margin-bottom: 0;
+        margin-right: 0.75rem; }
+  .widgets__mobile {
+    display: none; }
+  .summary-heading {
+    padding-left: 0.75rem; }
+  .width-wrapper {
+    width: 90%;
+    margin: 0 auto; }
+  .update-block {
+    margin: 0;
+    margin-bottom: 1rem;
+    padding-bottom: 1rem; }
+  .global-footer__menu {
+    justify-content: center; }
+  .global-footer__menu-item {
+    width: auto;
+    margin: 0.75rem; } }
