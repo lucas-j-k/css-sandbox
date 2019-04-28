@@ -12,8 +12,8 @@
             <div class="live-feed mobile-feed" id="feed-live" data-feed="live">
                 <div class="update-block">
                     <div class="update-block__header">
-                        <p>90+2 mins</p>
-                        <p>Everton 2-0 Man Utd</p>
+                        <p>64 mins</p>
+                        <p>Everton 4-0 Man Utd</p>
                     </div>
                     <div class="update-block__content">
                         <p>
@@ -31,8 +31,8 @@
                 </div>
                 <div class="update-block">
                     <div class="update-block__header">
-                        <p>88 mins</p>
-                        <p>Everton 2-0 Man Utd</p>
+                        <p>56 mins</p>
+                        <p>Everton 3-0 Man Utd</p>
                     </div>
                     <div class="update-block__content">
                         <div class="update-block__tag"><span>CLOSE!</span></div>
@@ -51,7 +51,7 @@
                 </div>
                 <div class="update-block">
                     <div class="update-block__header">
-                        <p>76 mins</p>
+                        <p>28 mins</p>
                         <p>Everton 2-0 Man Utd</p>
                     </div>
                     <div class="update-block__content">

@@ -3,7 +3,7 @@
         {
             "title" : "Sports Live Feed",
             "directory" : "sports-live-feed",
-            "thumbnail" : "https://source.unsplash.com/random/400x400"
+            "thumbnail" : "https://res.cloudinary.com/duua3lsu1/image/upload/v1556488216/theme-sandbox/Thumbnails-for-homepage/sports-thumb.jpg"
         },
         {
             "title" : "Media Player",
